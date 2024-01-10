@@ -6,7 +6,7 @@
 
 .header {
   // background-color: #FAFAFA;
-  background-color: var(--pure-white);
+  // background-color: var(--pure-white);
 
   padding: 32px 0;
   transition: 0.3s;
@@ -721,12 +721,29 @@
   // EN
   color: #1d1d1d;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 00;
   line-height: 16px;
   word-wrap: break-word;
 
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  img {
+    width: 16px;
+  }
+
   &::after {
     display: none !important;
   }
+}
+
+.btns-opens {
+  display: flex;
+}
+
+.trade-language {
+  display: flex;
+  align-items: center;
 }

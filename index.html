@@ -49,6 +49,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <meta name="apple-mobile-web-app-title" content="" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -61,69 +66,6 @@
 
   <body>
     <form method="post" action="#" id="Form1">
-      <div class="aspNetHidden">
-        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-        <input
-          type="hidden"
-          name="__EVENTARGUMENT"
-          id="__EVENTARGUMENT"
-          value=""
-        />
-        <input
-          type="hidden"
-          name="__VIEWSTATE"
-          id="__VIEWSTATE"
-          value="4Ghv241yTW1vmpVtYELWxI53GL1c0d2FWfboCk7UExJ92ENAhuvrX3s8Oihz65U+q4oKVAd/bzuwbOp3o/0Upss+7710Ku+OidOzFbtDj0CKPcaif8iq/STEzER01hQsInv2/gWIWv6UgtGgggylKRegmq5XqfYmjV4awPIUKk/zA4i0"
-        />
-      </div>
-
-      <script type="text/javascript">
-        //<![CDATA[
-        var theForm = document.forms["Form1"];
-        if (!theForm) {
-          theForm = document.Form1;
-        }
-        function __doPostBack(eventTarget, eventArgument) {
-          if (!theForm.onsubmit || theForm.onsubmit() != false) {
-            theForm.__EVENTTARGET.value = eventTarget;
-            theForm.__EVENTARGUMENT.value = eventArgument;
-            theForm.submit();
-          }
-        }
-        //]]>
-      </script>
-
-      <script
-        src="/WebResource.axd?d=__87fQ2y4TbpoD22lkjq00JuUWZ8HDx3h7Li35F77VOca0mJMDO4gdEDmlEU-u2DvuWaC6lgFQGUaYTL-ixchxkc9wI1&amp;t=638343975423008439"
-        type="text/javascript"
-      ></script>
-
-      <script type="text/javascript">
-        //<![CDATA[
-        function CallServer(arg, context) {
-          WebForm_DoCallback(
-            "__Page",
-            arg,
-            retornoCallback,
-            "",
-            erroCallback,
-            true
-          );
-        }
-      </script>
-
-      <div class="aspNetHidden">
-        <input
-          type="hidden"
-          name="__VIEWSTATEGENERATOR"
-          id="__VIEWSTATEGENERATOR"
-          value="CA0B0334"
-        />
-      </div>
-      <a href="#mainContent" accesskey="3" style="display: none"
-        >Go to Main Content</a
-      >
-
       <div class="searchbox">
         <div class="container container-responsivo-full">
           <div class="row">
@@ -464,14 +406,16 @@
                     <div class="dropdown drop-idiomas">
                       <a
                         href=""
-                        id="dropdownMenuLink"
+                        id=""
                         class="dropdown-toggle trocaLinguagem"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
                         title="Mudar o idioma"
-                        >PT
+                      >
+                        <img src="images/icon_EN.png" alt="" />
+                        EN
                       </a>
                       <div
                         class="dropdown-menu"
@@ -828,6 +772,73 @@
           </aside>
         </div>
       </div>
+
+      <div class="banner-texture">
+        <img src="images/img-textura-banner.jpg" alt="" />
+      </div>
+
+      <div class="infos-banner">
+        <div class="container container-banner container-responsivo-full">
+          <div class="texts-banner">
+            <h1>
+              Soluções que estabelecem conexão entre você,
+              <span>o mercado de capitais e os Investidores</span>
+            </h1>
+
+            <div class="description-text">
+              <h4>
+                A prisma integra um Ecossistema completo do <br />
+                mercado de capitais para sua empresa
+              </h4>
+            </div>
+
+            <div class="btns-banner">
+              <a href="" class="btn-1 link-com-arrow">Fale com especialista</a>
+
+              <a href="" class="btn-2 link-com-arrow">Explorar soluções</a>
+            </div>
+          </div>
+
+          <div class="img-banner">
+            <img src="images/img-banner.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="carrosel-home">
+        <div class="container container-responsivo-full container-carrosel">
+          <div class="texts-carrosel">
+            <h6>Soluções inteligentes</h6>
+            <h1>
+              Oferecemos uma gama de serviços que abrangem todas as faces
+              <br /><span>do relacionamento com o universo financeiro.</span>
+            </h1>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper wrapper-home">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+
+            <div class="paginations-home">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script src="./js/carrosel.js"></script>
 
       <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
