@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault();
 
     if (clicked) {
-      console.log("click ok")
+      console.log("click ok");
     }
 
     clicked = true;
