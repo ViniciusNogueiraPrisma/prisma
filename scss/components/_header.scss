@@ -471,7 +471,7 @@
       }
 
       a {
-        color: var(--text-color);
+        // color: var(--text-color);
 
         small {
           color: var(--text-color) !important;
@@ -746,4 +746,8 @@
 .trade-language {
   display: flex;
   align-items: center;
+}
+
+.estrutura-home {
+  background-color: #194341;
 }
