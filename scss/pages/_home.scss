@@ -244,9 +244,17 @@
   position: relative;
   padding-top: 86px;
 
+  @media(max-width: 1439px) {
+    padding-top: 100px;
+  }
+
   .texts-banner {
     width: 853px;
     margin-left: 7.65625vw;
+
+    @media(max-width: 1439px) {
+      margin-left: 0px;
+    }
 
     h1 {
       color: #1d1d1d;
@@ -612,6 +620,10 @@
 
 .video-home {
   margin-top: -120px;
+
+  .container {
+    padding: 0px !important;
+  }
 }
 
 .video {
