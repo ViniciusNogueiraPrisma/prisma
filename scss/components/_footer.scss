@@ -266,3 +266,47 @@
     display: none;
   }
 }
+
+@media (max-width: 1659px) {
+  footer {
+    padding: 64px 0px !important;
+
+    .container {
+      // padding: 0 !important;
+    }
+  }
+
+  .footer-content {
+    display: flex;
+    gap: 24px !important;
+  }
+
+  .footer-list .contents-list .itens p {
+    // font-size: 14px !important;
+  }
+
+  .footer-list .contents-list:first-child {
+    padding: 0px;
+    padding-right: 0px !important;
+  }
+
+  .footer-list .contents-list .title h6 {
+    // font-size: 15px !important;
+  }
+
+  .footer-end {
+    width: 100% !important;
+  }
+
+  .footer-list .contents-list .itens {
+    width: 114px !important;
+  }
+
+  .cadastro-footer {
+    width: 100% !important;
+  }
+
+  .social-footer {
+    flex-direction: column;
+  }
+}

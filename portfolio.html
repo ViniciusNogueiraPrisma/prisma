@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisma</title>
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="shortcut icon" href="images/favicon-60px.png" sizes="60x60" />
+    <link rel="shortcut icon" href="images/favicon-76px.png" sizes="76x76" />
+    <link
+      rel="apple-touch-icon"
+      href="images/favicon-120px.png"
+      sizes="120x120"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="images/favicon-152px.png"
+      sizes="152x152"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link preload="" rel="stylesheet" href="vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/basic-table.min.css" />
+    <link rel="stylesheet" href="vendor/slick.min.css" />
+    <link rel="stylesheet" href="vendor/slick-theme.min.css" />
+    <link rel="stylesheet" href="vendor/aos.css" />
+    <link rel="stylesheet" href="css/import.dist.min.css" />
+    <script
+      src="https://kit.fontawesome.com/8c2d2553fe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta name="apple-mobile-web-app-title" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <script src="vendor/jquery.min.js"></script>
+
+    <link rel="manifest" href="manifest.json" />
+    <script src="../sw.js"></script>
+  </head>
+
+  <body>
+    <form method="post" action="#" id="Form1">
+      <div class="searchbox">
+        <div class="container container-responsivo-full">
+          <div class="row">
+            <div class="offset-xl-0 col-xl-12">
+              <div class="input-group">
+                <input
+                  name="ctl00$ctl78"
+                  type="text"
+                  class="form-control inputBusca"
+                  placeholder="Digite aqui a sua busca"
+                />
+
+                <div class="input-group-text">
+                  <button
+                    type="button"
+                    class="close-searchbox"
+                    aria-label="Fechar Modal de Pesquiasr"
+                  >
+                    <span class="icon-exibir"></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="search-help">
+                <small> Aperte Enter para pesquisar </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--MODAL TELA INTEIRA-->
+      <div class="alerta" style="display: none">
+        <div class="container"></div>
+      </div>
+
+      <div class="storys-fixed">
+        <div data-slide="slide" class="slide">
+          <button
+            type="button"
+            aria-label="Anterior"
+            id="prevButtonStorys"
+            class="button-story button-prev"
+          >
+            <img src="./images/icon-left-story.svg" alt="Anterior" />
+          </button>
+          <div class="slide-content">
+            <div class="slide-items"></div>
+            <nav class="slide-nav">
+              <div class="slide-thumb"></div>
+              <div class="header-storys">
+                <img
+                  src="./images/logo-prisma-branca.svg"
+                  width="132"
+                  alt="Prisma"
+                />
+                <button type="button" id="closeStorys">
+                  <img src="./images/icon-fechar.svg" alt="Fechar" />
+                </button>
+              </div>
+              <button type="button" class="slide-prev">Anterior</button>
+              <button type="button" class="slide-next">Próximo</button>
+            </nav>
+          </div>
+          <button
+            type="button"
+            aria-label="Próximo"
+            id="nextButtonStorys"
+            class="button-story button-next"
+          >
+            <img src="./images/icon-right-story.svg" alt="Próximo" />
+          </button>
+        </div>
+      </div>
+
+      <div
+        id="fadeModal"
+        class="modal-backdrop fade in"
+        style="display: none"
+      ></div>
+
+      <div class="headerFixoMenu">
+        <div class="acessibillity-bar">
+          <div class="container container-responsivo-full"></div>
+        </div>
+
+        <header class="header">
+          <div class="container container-responsivo-full">
+            <div class="content">
+              <a class="logo-header" href="/" accesskey="1">
+                <img class="logo-white" src="./images/logo_prisma.png" alt="" />
+                <img
+                  class="logo-colorida"
+                  src="./images/logo_prisma.png"
+                  alt=""
+                />
+              </a>
+              <nav class="nav-menu-header">
+                <ul>
+                  <li class="dropdown header-navigation-item">
+                    <a
+                      href="javascript:"
+                      type="button"
+                      class="dropdown-toggle"
+                      id="menu-item-1"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                      >A Prisma</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-1">
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Sobre-a-REAG-Investimentos"
+                          target="_self"
+                          >Sobre a REAG Investimentos</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Lideranca"
+                          target="_self"
+                          >Liderança</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Nossa-Historia"
+                          target="_self"
+                          >Nossa História</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Apresentacao-Institucional"
+                          target="_self"
+                          >Apresentação Institucional</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown header-navigation-item">
+                    <a
+                      href="javascript:"
+                      type="button"
+                      class="dropdown-toggle"
+                      id="menu-item-2"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                      >Soluções</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-2">
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Composicao-acionaria"
+                          target="_self"
+                          >Composição Acionária</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Estrutura-Organizacional"
+                          target="_self"
+                          >Estrutura Organizacional</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Diretora"
+                          target="_self"
+                          >Diretoria</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Conselho-de-Administracao-e-comites"
+                          target="_self"
+                          >Conselho de Administração e Comitês</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Estatuto-social-e-politicas"
+                          target="_self"
+                          >Estatuto Social e Políticas</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/show.aspx?idCanal=Sj/B95W3Mas/ffa+3RwD1g=="
+                          target="_self"
+                          >Comitê de Auditoria Estatuário</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown header-navigation-item">
+                    <a
+                      href="javascript:"
+                      type="button"
+                      class="dropdown-toggle"
+                      id="menu-item-3"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                      >Ecossistema</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-3">
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Central-de-Resultados"
+                          target="_self"
+                          >Central de Resultados</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Documentos-CVM"
+                          target="_self"
+                          >Documentos CVM</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Ratings"
+                          target="_self"
+                          >Ratings</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="dropdown header-navigation-item">
+                    <a
+                      href="javascript:"
+                      type="button"
+                      class="dropdown-toggle"
+                      id="menu-item-4"
+                      aria-expanded="false"
+                      data-bs-toggle="dropdown"
+                      >Contato</a
+                    >
+                    <ul class="dropdown-menu" aria-labelledby="menu-item-4">
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Calendario-de-Eventos"
+                          target="_self"
+                          >Calendário de Eventos</a
+                        >
+                      </li>
+                      <li class="item">
+                        <a
+                          class="dropdown-item"
+                          href="https://reag.riprisma.com/Fale-com-o-RI"
+                          target="_self"
+                          >Fale com o RI</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="header-right-side">
+                <div
+                  class="button-storys-open storiesHome"
+                  style="display: none"
+                >
+                  <button id="openStorys" type="button">
+                    Stories RI
+                    <img
+                      src="./images/icons/icon-stories.svg"
+                      alt="Icon Stories"
+                    />
+                    <!--
+										 -->
+                  </button>
+                </div>
+
+                <div class="others-itens-menu">
+                  <div class="btn-espc">
+                    <a href="">Fale com especialista</a>
+                  </div>
+
+                  <div class="accessibility-tools">
+                    <button
+                      id="contrastToggle"
+                      type="button"
+                      class="tool"
+                      data-bs-toggle="tooltip"
+                      data-bs-trigger="hover"
+                      data-bs-placement="bottom"
+                      title=""
+                      data-bs-original-title="Contraste"
+                    >
+                      <span class="icon-contraste"></span>
+                    </button>
+
+                    <button
+                      id="decreaseFont"
+                      type="button"
+                      class="tool"
+                      data-bs-toggle="tooltip"
+                      data-bs-trigger="hover"
+                      data-bs-placement="bottom"
+                      title=""
+                      data-bs-original-title="Diminuir o tamanho da fonte"
+                    >
+                      <span class="icon-diminuir-fonte" accesskey="5"></span>
+                    </button>
+
+                    <button
+                      id="increaseFont"
+                      type="button"
+                      class="tool"
+                      data-bs-toggle="tooltip"
+                      data-bs-trigger="hover"
+                      data-bs-placement="bottom"
+                      title=""
+                      data-bs-original-title="Aumentar o tamanho da fonte"
+                    >
+                      <span class="icon-aumentar-fonte" accesskey="4"></span>
+                    </button>
+                  </div>
+
+                  <div class="trade-language">
+                    <div class="dropdown drop-idiomas">
+                      <a
+                        href=""
+                        id=""
+                        class="dropdown-toggle trocaLinguagem"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        title="Mudar o idioma"
+                      >
+                        <img src="images/icon_EN.png" alt="" />
+                        EN
+                      </a>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                        x-placement="bottom-start"
+                        style="will-change: transform"
+                      >
+                        <ul>
+                          <li>
+                            <a
+                              id=""
+                              accesskey="7"
+                              class="dropdown-item"
+                              href=""
+                            >
+                              <span>PT</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              id=""
+                              accesskey="8"
+                              class="dropdown-item"
+                              href=""
+                            >
+                              <span>EN</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="btns-opens">
+                    <button
+                      type="button"
+                      class="open-searchbox"
+                      data-bs-toggle="tooltip"
+                      data-bs-trigger="hover"
+                      data-bs-placement="bottom"
+                      accesskey="2"
+                      title="Pesquisar"
+                    >
+                      <i class="icon-busca"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="toggle-mobile-menu"
+                      aria-label="Abrir Menu"
+                    >
+                      <span class="icon-nav" title="Abrir Menu"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <div class="mobile-menu-div">
+        <div class="container container-responsivo-full">
+          <aside class="mobile-menu">
+            <div class="header-menu">
+              <picture class="branding">
+                <img
+                  class="logo-mobile"
+                  src="./images/logo-prisma-branca.svg"
+                  alt="Prisma"
+                />
+              </picture>
+              <div class="div-menu-open">
+                <p>Fechar</p>
+                <button
+                  type="button"
+                  class="toggle-mobile-menu"
+                  aria-label="Fechar Menu"
+                  title="Fechar "
+                >
+                  <span class="icon-nav"></span>
+                </button>
+              </div>
+            </div>
+            <div class="middle-header">
+              <div class="menu-tools">
+                <div class="div-pesquisar-mobile">
+                  <button
+                    type="button"
+                    class="pesquisar-button"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="hover"
+                    data-bs-placement="bottom"
+                    aria-label="Pesquisar"
+                    title="Pesquisar"
+                  >
+                    <i class="icon-busca"></i>
+                  </button>
+                  <input
+                    name="ctl00$searchId"
+                    type="text"
+                    id="searchId"
+                    class="inputBuscaMobile"
+                    placeholder="Pesquisar"
+                  />
+                </div>
+                <p>Aperte Enter para pesquisar</p>
+              </div>
+              <div class="institucional-and-language">
+                <a href="https://reag.com.br/" target="_blank">
+                  Institucional
+                </a>
+                <ul>
+                  <li id="btnPt" class="active">
+                    <a
+                      href="javascript:__doPostBack('ctl00$hlkCulturaPtBr','')"
+                    >
+                      PT
+                    </a>
+                  </li>
+                  <li id="btnEn">
+                    <a
+                      href="javascript:__doPostBack('ctl00$hlkCulturaEnUS','')"
+                    >
+                      EN
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="menu-body">
+              <nav class="accordion nav-mobile" id="accordionMenuMobile">
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-1"
+                      aria-controls="mobile-menu-1"
+                    >
+                      Institucional
+                    </button>
+                  </h3>
+                  <div
+                    id="mobile-menu-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Sobre-a-REAG-Investimentos"
+                            target="_self"
+                            >Sobre a REAG Investimentos</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Lideranca"
+                            target="_self"
+                            >Liderança</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Nossa-Historia"
+                            target="_self"
+                            >Nossa História</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Apresentacao-Institucional"
+                            target="_self"
+                            >Apresentação Institucional</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-2"
+                      aria-controls="mobile-menu-2"
+                    >
+                      Governança
+                    </button>
+                  </h3>
+                  <div
+                    id="mobile-menu-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Composicao-acionaria"
+                            target="_self"
+                            >Composição Acionária</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Estrutura-Organizacional"
+                            target="_self"
+                            >Estrutura Organizacional</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Diretora"
+                            target="_self"
+                            >Diretoria</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Conselho-de-Administracao-e-comites"
+                            target="_self"
+                            >Conselho de Administração e Comitês</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Estatuto-social-e-politicas"
+                            target="_self"
+                            >Estatuto Social e Políticas</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/show.aspx?idCanal=Sj/B95W3Mas/ffa+3RwD1g=="
+                            target="_self"
+                            >Comitê de Auditoria Estatuário</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-3"
+                      aria-controls="mobile-menu-3"
+                    >
+                      Informações aos Investidores
+                    </button>
+                  </h3>
+                  <div
+                    id="mobile-menu-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Central-de-Resultados"
+                            target="_self"
+                            >Central de Resultados</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Documentos-CVM"
+                            target="_self"
+                            >Documentos CVM</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Ratings"
+                            target="_self"
+                            >Ratings</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3>
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      aria-expanded="false"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#mobile-menu-4"
+                      aria-controls="mobile-menu-4"
+                    >
+                      Serviços aos Investidores
+                    </button>
+                  </h3>
+                  <div
+                    id="mobile-menu-4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionMenuMobile"
+                  >
+                    <div class="accordion-body">
+                      <ul class="pages">
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Calendario-de-Eventos"
+                            target="_self"
+                            >Calendário de Eventos</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a
+                            href="https://reag.riprisma.com/Fale-com-o-RI"
+                            target="_self"
+                            >Fale com o RI</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+
+            <div class="redes-menu-mobile">
+              <div class="title-redes-mobile">
+                <span></span>
+              </div>
+
+              <div class="imgs-redes-mobile">
+                <a href="" target="_blank"
+                  ><img src="../images/icons/icon-insta-mobile.png"
+                /></a>
+                <a href="" target="_blank"
+                  ><img src="../images/icons/icon-face-mobile.png"
+                /></a>
+                <a href="" target="_blank"
+                  ><img src="../images/icons/icon-twitter-mobile.png"
+                /></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="header-internas">
+        <div class="container title-internas">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="title-portfolio">
+          <h2>
+            Conheça nosso portfólio e o quanto podemos auxiliar no
+            desenvolvimento da sua empresa
+          </h2>
+        </div>
+      </div>
+
+      <div class="container container-responsivo-full">
+        <div class="section-des">
+          <div class="images-section-des">
+            <img src="images/ativo.png" alt="" />
+          </div>
+
+          <div class="other-image-des">
+            <img src="images/thumb-des.png" alt="" />
+          </div>
+
+          <div class="container texts-section-des">
+            <div class="texts-content">
+              <h3>
+                Descubra como podemos, juntos,
+                <span>impulsionar o crescimento</span> e a
+                <span>inovação do seu negócio</span>
+              </h3>
+
+              <p>
+                A Prisma não desenvolve apenas websites de RI, temos um
+                portfólio completo, com o desenvolvimento de
+                <strong
+                  >strong, releases, canais específicos de ESG e muito
+                  mais.</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="parallax-container">
+        <div class="container container-responsivo-full">
+          <div class="images-parallax">
+            <div class="container img-first"></div>
+            <div class="container img-second"></div>
+            <div class="container img-third"></div>
+            <div class="container img-third"></div>
+            <div class="container img-quatro"></div>
+            <div class="container img-cinco"></div>
+            <div class="container img-seis"></div>
+            <div class="container img-sete"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="xp-prisma">
+        <div class="container">
+          <div class="texts-xp">
+            <h2>
+              Experiência e qualidade <br />
+              ao longo do tempo
+            </h2>
+          </div>
+        </div>
+        <div class="counter-xp">
+          <div class="container">
+            <div class="counter-item">
+              <span>+100</span>
+              <h4>Clientes parceiros</h4>
+            </div>
+
+            <div class="counter-item">
+              <span>+700</span>
+              <h4>projetos entregues</h4>
+            </div>
+
+            <div class="counter-item">
+              <span>+10</span>
+              <h4>anos de experiência</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="duv-home">
+        <div class="container container-internas">
+          <div class="content-duv">
+            <div class="text-duv">
+              <h2>Ficou com alguma dúvida?</h2>
+              <h5>Entre em contato com nossos especialistas.</h5>
+            </div>
+
+            <div class="link-duv">
+              <a href="">Fale com especialistas</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container container-responsivo-full">
+          <div class="footer-content">
+            <div class="footer-list">
+              <div class="contents-list">
+                <div class="title">
+                  <h6>A Prisma</h6>
+                </div>
+
+                <div class="itens">
+                  <p>Quem Somos</p>
+                  <p>Nossos Time</p>
+                  <p>Portfolio</p>
+                  <p>Blog</p>
+                </div>
+              </div>
+
+              <div class="contents-list">
+                <div class="title">
+                  <h6>Soluções</h6>
+                </div>
+
+                <div class="itens">
+                  <p>Website</p>
+                  <p>Meetings</p>
+                  <p>IRM</p>
+                  <p>Awareness</p>
+                  <p>Full Strategy</p>
+                  <p>Consultoria</p>
+                  <p>Outros Serviços</p>
+                </div>
+              </div>
+
+              <div class="contents-list">
+                <div class="title">
+                  <h6>Ecossistema</h6>
+                </div>
+
+                <div class="itens">
+                  <p>Conheça nosso Ecossistema</p>
+                </div>
+              </div>
+
+              <div class="contents-list">
+                <div class="title">
+                  <h6>Contato</h6>
+                </div>
+
+                <div class="itens">
+                  <p>Fale conosco</p>
+                  <p>Receba a newsletter</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-end">
+              <div class="itens-end">
+                <h6>Endereço</h6>
+                <span
+                  >R. Leopoldo Couto Magalhães Júnior, 758 - 7° andar - Itaim
+                  Bibi, São Paulo - SP, 04542-000</span
+                >
+              </div>
+
+              <div class="itens-end">
+                <h6>Entre em Contato</h6>
+                <p>comercial@riprisma.com | (11) 98644-7855</p>
+                <span
+                  >Nosso time de atendimento está disponível de segunda à
+                  sexta-feira, das 08h às 21h.</span
+                >
+              </div>
+            </div>
+
+            <div class="cadastro-footer">
+              <h6>Cadastre-se</h6>
+              <p>
+                Cadastre-se no mailing para receber atualizações sobre a empresa
+                e ficar atualizado.
+              </p>
+
+              <div class="input-footer">
+                <input type="text" placeholder="Digite seu e-mail" />
+                <button onclick="" type="submit">
+                  <img src="images/bi_arrow-left-short.png" alt="" />
+                </button>
+              </div>
+
+              <div class="social-footer">
+                <h6>Redes Sociais:</h6>
+                <div class="social-img">
+                  <a href=""><img src="images/insta.png" alt="" /></a>
+                  <a href=""><img src="images/face.png" alt="" /></a>
+                  <a href=""><img src="images/x.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="last-footer">
+        <div class="container container-responsivo-full">
+          <div class="last-itens-footer">
+            <div class="text-prisma">
+              <p>Prisma © Todos os direitos reservados 2024</p>
+            </div>
+
+            <div class="link-prisma">
+              <a href=""><p>Termos e Condições</p></a>
+              <a href=""><p>Política de Privacidade</p></a>
+            </div>
+
+            <div class="logo-prisma">
+              <img src="images/logo-footer.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script src="./js/carrosel.js"></script>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+      ></script>
+
+      <script defer src="vendor/bootstrap.bundle.min.js"></script>
+      <script
+        defer
+        src="https://template.riweb.com.br/prisma/js/storiesPrisma.min.js"
+      ></script>
+      <script defer src="vendor/counterup.js"></script>
+      <script defer src="vendor/menuFixo.js"></script>
+      <script defer src="vendor/aos.js"></script>
+      <script defer src="vendor/basic-table.min.js"></script>
+      <script defer src="vendor/slick.min.js"></script>
+      <script defer src="js/zoomScroll.js"></script>
+      <script defer src="js/main.js"></script>
+      <script defer src="../js/Master.js"></script>
+      <script async src="https://static.addtoany.com/menu/page.js"></script>
+
+      <script src="js/ics.js"></script>
+    </form>
+  </body>
+</html>

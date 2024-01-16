@@ -272,8 +272,353 @@
   width: 180px;
 }
 
-
-.carousel-indicators  {
+.carousel-indicators {
   display: none !important;
 }
 
+.team-person {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+
+  @media (max-width: 1439px) {
+    grid-template-columns: auto auto auto;
+  }
+
+  @media (max-width: 1199px) {
+    grid-template-columns: auto auto;
+  }
+
+  @media (max-width: 796px) {
+    grid-template-columns: auto;
+  }
+
+  .card {
+    width: 100%;
+    border-radius: 8px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+
+      background: rgb(0, 0, 0);
+      background: -moz-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1);
+    }
+
+    .card-image {
+      img {
+        border-radius: 8px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .card-content {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding: 42px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+
+      .card-infos {
+        h5 {
+          margin: 0;
+          padding: 0;
+
+          color: white;
+          font-size: 22px;
+          font-family: "Sofia Sans", sans-serif;
+          font-weight: 500;
+          line-height: 26.4px;
+          word-wrap: break-word;
+          padding-bottom: 16px;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+
+          color: white;
+          font-size: 16px;
+          font-family: Arial;
+          font-weight: 400;
+          line-height: 24px;
+          word-wrap: break-word;
+        }
+      }
+
+      .card-social {
+        img {
+          width: 20px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.proj-nt {
+  background-color: #f2f2f2;
+  padding-top: 250px;
+  margin-top: -230px;
+}
+
+.title-portfolio {
+  padding: 64px 0px;
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.section-des {
+  display: flex;
+}
+
+.image-section-des {
+  object-fit: cover;
+  width: 100%;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.other-image-des img {
+  height: 692px;
+  object-fit: cover;
+}
+
+.texts-image-des {
+  position: absolute;
+  border: 10px solid black;
+}
+
+.images-section-des {
+  img {
+    height: 100%;
+    background-color: #000000;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+  }
+}
+
+.texts-section-des {
+  position: relative;
+  z-index: 20;
+  position: absolute;
+  color: white;
+  left: 0;
+  right: 0;
+  height: 692px;
+  display: flex;
+  align-items: center;
+  // padding: 0px 64px;
+
+  .texts-content {
+    width: 429px;
+
+    h3 {
+      color: #fafafa;
+      font-size: 35px;
+      font-family: Sofia Sans;
+      font-weight: 400;
+      line-height: 42px;
+      word-wrap: break-word;
+
+      span {
+        color: #ccc1aa;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 18px;
+      font-family: Arial;
+      font-weight: 400;
+      line-height: 27px;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.parallax-container {
+  background-color: #194341;
+  padding-top: 254px;
+}
+
+.images-parallax {
+  .container {
+    text-align: center;
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  p {
+    max-width: 52ch;
+    line-height: 1.5;
+    padding: 1em;
+  }
+
+  a {
+    display: inline-block;
+    padding: 1em 3.5em;
+    background-color: var(--color);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0.3em;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 0.875rem;
+  }
+
+  .blank,
+  .other {
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--color);
+  }
+
+  .second {
+    background-image: url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-attachment: fixed;
+    height: 1200px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 1em;
+  }
+
+  .card > a {
+    margin-bottom: 2em;
+  }
+
+  .item {
+    display: flex;
+    max-width: 320px;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5em;
+    -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+    box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  }
+
+  .img {
+    width: 90%;
+    height: 200px;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    border-radius: 0.3em;
+  }
+
+  .img-first {
+    background-image: url("../../images/tc.png");
+  }
+
+  .img-second {
+    background-image: url("../../images/banco-pan.png");
+  }
+
+  .img-third {
+    background-image: url("../../images/all.png");
+  }
+
+  .img-quatro {
+    background-image: url("../../images/meliu.png");
+  }
+
+  .img-cinco {
+    background-image: url("../../images/yduqs.png");
+  }
+
+  .img-seis {
+    background-image: url("../../images/itausa.png");
+  }
+
+  .img-sete {
+    background-image: url("../../images/pandhora.png");
+  }
+
+  .second {
+    flex-direction: row;
+    gap: 1.6em;
+  }
+}
+
+.counter-xp {
+  width: 50%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  // position: absolute;
+
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 147px;
+  padding-right: 40px;
+  background-color: #fefefe;
+
+  .container {
+  }
+
+  .counter-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    h4 {
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.xp-prisma {
+  background-color: #194341;
+}

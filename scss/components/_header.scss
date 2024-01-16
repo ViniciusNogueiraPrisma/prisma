@@ -184,7 +184,7 @@
       }
 
       .open-searchbox {
-        @media (max-width: 991px) {
+        @media (max-width: 1199px) {
           display: none;
         }
 
@@ -402,7 +402,7 @@
 
   display: none !important;
 
-  @media (max-width: 991px) {
+  @media (max-width: 1199px) {
     display: flex !important;
   }
 
@@ -711,7 +711,7 @@
       font-weight: 200;
 
       @media (max-width: 1439px) {
-        font-size: 14px;
+        font-size: 16px;
         padding: 12px 20px;
       }
     }
@@ -759,4 +759,19 @@
 
 .estrutura-home {
   background-color: #194341;
+}
+
+
+@media(max-width: 1199px) {
+  .nav-menu-header {
+    display: none;
+  }
+
+  .btn-espc {
+    display: none;
+  }
+
+  .accessibility-tools {
+    display: none;
+  }
 }
