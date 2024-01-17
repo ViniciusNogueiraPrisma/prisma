@@ -198,15 +198,12 @@
   select {
     background-color: transparent;
     border: none;
-    // color: var(--text-color);
     color: black;
-    // padding: 3px 30px 3px 0px;
     padding: 0 !important;
-    // font-size: rem(14);
     font-size: 16px;
     min-width: 135px;
 
-    background-image: url("../images/icons/icon-arrow-down-full.svg");
+    background-image: url("../../images/icons/icon-arrow-down-full.svg");
     background-position: right;
     option {
       color: var(--pure-black);
@@ -410,4 +407,97 @@
 
 .termos-politica .primary-button:hover {
   padding: 8px 24px !important;
+}
+
+.mySwiper-sec {
+  .swiper-slide-active {
+  }
+
+  .swiper-slide {
+    width: 329px;
+    height: auto;
+
+    .swiper-card {
+      border: 2px solid #2e7a77;
+      border-radius: 4px;
+      padding: 24px 16px;
+      background-color: white;
+      position: relative;
+      z-index: 2;
+
+      h6 {
+        margin: 0;
+        padding: 0;
+
+        margin-top: 24px;
+        margin-bottom: 8px;
+
+        color: #333333;
+        font-size: 18px;
+        font-family: "Sofia Sans", sans-serif;
+        font-weight: 700;
+        line-height: 21.6px;
+        word-wrap: break-word;
+      }
+
+      p {
+        margin: 0;
+        padding: 0;
+
+        // Garantir o acesso a informações somente por pessoas autorizadas.
+        color: #666666;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 400;
+        line-height: 18.48px;
+        word-wrap: break-word;
+      }
+    }
+  }
+
+  .swiper-wrapper {
+  }
+
+  .swiper-pagination {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-right: 140px;
+    // position: absolute !important;
+    // left: 0 !important;
+    // width: fit-content !important;
+    // right: 0 !important;
+  }
+}
+
+.carrosel-home {
+  .swiper {
+    position: initial !important;
+  }
+}
+
+.dados-sec {
+  padding-top: 220px;
+  margin-top: -90px;
+  background-color: #194341;
+}
+
+.pagination-sec {
+  width: fit-content !important;
+  margin-left: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: -132px !important;
+    margin-left: -80px;
+  }
+
+  .swiper-button-next {
+  }
+}
+
+.wrapper-sec {
 }
