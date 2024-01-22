@@ -1,10 +1,7 @@
 var swiper = new Swiper(".mySwiper", {
   loop: false, // Desativa o loop
   slidesPerView: 4,
-  pagination: {
-    el: ".swiper-pagination",
-    // type: "fraction",
-  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -12,6 +9,20 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper-sec", {
+  loop: false, // Desativa o loop
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   // type: "fraction",
+  // },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiper = new Swiper(".mySwiper-home", {
   loop: false, // Desativa o loop
   slidesPerView: "auto",
   spaceBetween: 24,

@@ -75,6 +75,30 @@ $(".titulosCentral").each(function () {
   $("#resultsTitle").append($(this));
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  var accordion = new bootstrap.Collapse(document.getElementById("conce"), {
+    toggle: false,
+  });
+
+  var accordionItems = document.querySelectorAll(".accordion-item");
+
+  accordionItems.forEach(function (item) {
+    item.addEventListener("show.bs.collapse", function () {
+      accordionItems.forEach(function (otherItem) {
+        if (otherItem !== item) {
+          var collapse = new bootstrap.Collapse(
+            otherItem.querySelector(".collapse"),
+            {
+              toggle: false,
+            }
+          );
+          collapse.hide();
+        }
+      });
+    });
+  });
+});
+
 // observes the input's :focus and :focusout event inside the search box and styles its parent element.
 
 $(".searchbox input").focus(function () {

@@ -400,15 +400,6 @@
 .wrapper-home {
   display: flex;
   gap: 24px;
-  margin-left: 222px;
-
-  // &::before {
-  //   content: "asasa";
-  //   position: absolute;
-  //   border: 5px solid red;
-  //   right: 0;
-
-  // }
 
   .swiper-slide {
     height: 700px;
@@ -522,6 +513,7 @@
 .estrutura-home {
   padding-top: 638px;
   margin-top: -469px;
+  // margin-top: -258px;
 }
 
 .container-estrutura {
@@ -1399,17 +1391,6 @@ footer {
   .paginations-home {
     display: none;
   }
-
-  .wrapper-home {
-    margin-left: 0;
-    max-width: 991px !important;
-
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-  }
 }
 
 @media (max-width: 1228px) {
@@ -1417,4 +1398,28 @@ footer {
     grid-template-columns: auto auto;
     grid-gap: 24px;
   }
+}
+
+.wrapper-home-first {
+  .swiper-slide {
+  }
+}
+
+.pagination-home-first {
+  position: absolute;
+  margin-left: -115px;
+  margin-top: -400px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: initial !important;
+    margin-bottom: 38px;
+  }
+}
+
+.container-carrosel {
+  margin-left: auto;
+  margin-right: 0;
+  max-width: 1675px;
+  padding: 0;
 }

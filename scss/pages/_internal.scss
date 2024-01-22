@@ -205,6 +205,7 @@
 
     background-image: url("../../images/icons/icon-arrow-down-full.svg");
     background-position: right;
+
     option {
       color: var(--pure-black);
     }
@@ -534,22 +535,25 @@
 
 .sec-accordions-container {
   background-color: #f2f2f2;
-  height: 1200px;
+  // height: 1200px;
   margin-top: -165px;
   padding-top: 250px;
+  padding-bottom: 64px;
 }
 
 .accordions-sec {
   display: flex;
   gap: 24px;
+  position: relative;
+  // height: 100vh;
 
   .title-accordion {
     padding: 40px;
     background-color: #fff;
     border-radius: 8px;
-    // width: 417px;
     height: 206px;
-    position: relative;
+    position: sticky;
+    top: 64px;
 
     h3 {
       margin: 0;
@@ -564,5 +568,44 @@
 
   .accordions-contents {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
   }
+}
+
+.texts-sec {
+  padding-top: 64px;
+  padding-bottom: 104px;
+
+  h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    color: #1e524f;
+  }
+
+  .first-p {
+    padding: 24px 0px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: #1d1d1d;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.carrosel-home-first {
+  background-color: #fff;
+  position: relative;
 }
