@@ -1290,6 +1290,16 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    @media (max-width: 830px) {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 21px;
+    }
+
+    @media (max-width: 680px) {
+      grid-template-columns: auto;
+    }
+
     a {
       text-decoration: none;
     }
@@ -1355,6 +1365,10 @@ footer {
       font-style: normal;
       font-weight: 300;
       line-height: 120%;
+
+      @media (max-width: 920px) {
+        font-size: 39px;
+      }
     }
   }
 }
@@ -1377,6 +1391,10 @@ footer {
     font-weight: 400;
     line-height: 120%;
     color: #1e524f;
+
+    @media (max-width: 920px) {
+      font-size: 31px;
+    }
   }
 
   .first-p {
