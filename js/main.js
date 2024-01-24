@@ -99,7 +99,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// observes the input's :focus and :focusout event inside the search box and styles its parent element.
+// function redirectTo(event, contentId) {
+//   event.preventDefault();
+
+//   var targetElement = document.getElementById(contentId);
+
+//   if (targetElement) {
+//     var offset = -520;
+//     var targetPosition = targetElement.offsetTop - offset;
+
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: "smooth",
+//     });
+//   }
+// }
+
+function redirectTo(event, contentId) {
+  event.preventDefault();
+
+  var targetElement = document.getElementById(contentId);
+
+  if (targetElement) {
+    var offset = -520;
+    var targetPosition = targetElement.offsetTop - offset;
+
+    // Remove a classe "active" de todos os links
+    var links = document.querySelectorAll(".list a");
+    links.forEach(function (link) {
+      link.classList.remove("active");
+    });
+
+    // Adiciona a classe "active" ao link clicado
+    event.target.classList.add("active");
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+  }
+}
 
 $(".searchbox input").focus(function () {
   $(".searchbox .input-group").addClass("focused-border");

@@ -846,12 +846,15 @@
   position: relative;
   padding: 112px 0px;
   display: flex;
-  height: 100vh;
+  // height: 100vh;
   justify-content: space-between;
   gap: 171px;
 
   .contents {
     width: 1005px;
+    display: flex;
+    flex-direction: column;
+    gap: 112px;
 
     .content-1 {
       .title-content {
@@ -932,7 +935,20 @@
     }
   }
 
+  .list a.active {
+    background-color: #194341 !important;
+    transition: 0.5s;
+    color: white;
+    width: 270px !important;
+
+    img {
+      filter: contrast(1) brightness(311.5) grayscale(1) invert(0)
+        saturate(110.5) sepia(33);
+    }
+  }
+
   .list {
+    width: 240px !important;
     height: fit-content;
     position: sticky;
     top: 152px;
@@ -941,6 +957,8 @@
     gap: 16px;
     width: 32%;
     a {
+      transition: 0.5s;
+
       display: flex;
       justify-content: space-between;
 
