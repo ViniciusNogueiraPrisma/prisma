@@ -412,14 +412,14 @@ body {
   color: var(--text-color-main);
 }
 
-.dropdown-menu::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  background-color: #dadada;
-  position: absolute;
-  top: -5px;
-  z-index: -1;
-  left: 8px;
-}
+// .dropdown-menu::before {
+//   content: "";
+//   width: 10px;
+//   height: 10px;
+//   transform: rotate(45deg);
+//   background-color: #dadada;
+//   position: absolute;
+//   top: -5px;
+//   z-index: -1;
+//   left: 8px;
+// }

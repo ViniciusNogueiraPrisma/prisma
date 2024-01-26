@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-  loop: false,
+  loop: true,
   slidesPerView: "auto",
   // spaceBetween: 24,
   navigation: {
@@ -11,10 +11,8 @@ var swiper = new Swiper(".mySwiper", {
 window.addEventListener("resize", function () {
   if (window.innerWidth < 650) {
     swiper.params.slidesPerView = 1;
-    // swiper.params.spaceBetween = 0;
   } else {
     swiper.params.slidesPerView = "auto";
-    // swiper.params.spaceBetween = 24;
   }
 
   swiper.update();
@@ -27,10 +25,7 @@ var swiper = new Swiper(".mySwiper-sec", {
   loop: false,
   slidesPerView: "auto",
   spaceBetween: 24,
-  // pagination: {
-  //   el: ".swiper-pagination",
-  //   // type: "fraction",
-  // },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
