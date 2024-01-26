@@ -8,18 +8,18 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 650) {
-    swiper.params.slidesPerView = 1;
-  } else {
-    swiper.params.slidesPerView = "auto";
-  }
+// window.addEventListener("resize", function () {
+//   if (window.innerWidth < 650) {
+//     swiper.params.slidesPerView = 1;
+//   } else {
+//     swiper.params.slidesPerView = "auto";
+//   }
 
-  swiper.update();
-});
+//   swiper.update();
+// });
 
-swiper.autoplay.start();
-swiper.params.autoplay.delay = 6000;
+// swiper.autoplay.start();
+// swiper.params.autoplay.delay = 6000;
 
 var swiper = new Swiper(".mySwiper-sec", {
   loop: false,
