@@ -371,4 +371,78 @@
       filter: invert(1) brightness(1);
     }
   }
+
+  .btn-1::after {
+    filter: none !important;
+  }
+
+  .link-com-arrow::after,
+  .link-com-download::after {
+    filter: grayscale(1) invert(1) brightness(19);
+  }
+
+  .duv-home {
+    background-color: transparent;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .content-duv .text-duv h2 {
+    color: white;
+  }
+
+  .content-duv .text-duv h5 {
+    color: white;
+  }
+
+  .content-duv .link-duv a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+
+  footer {
+    background-color: transparent;
+  }
+
+  .last-footer {
+    background-color: transparent;
+  }
+
+  .last-footer .last-itens-footer p {
+    color: white;
+  }
+
+  .last-footer .last-itens-footer .logo-prisma img {
+    filter: brightness(18);
+  }
+
+  .first-dropdown .title-dropdown {
+    background-color: rgb(29, 29, 29);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  .first-dropdown .title-dropdown p {
+    color: white;
+  }
+
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-menu
+    li
+    .dropdown-item:hover {
+    background-color: #1d1d1d;
+  }
+
+  .second-dropdown .item:hover {
+    background-color: #1d1d1d;
+  }
+
+  .cadastro-footer .input-footer button img {
+    filter: grayscale(1);
+  }
 }

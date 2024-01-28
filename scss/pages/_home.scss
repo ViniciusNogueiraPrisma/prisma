@@ -234,9 +234,12 @@
 .banner-texture {
   display: flex;
   justify-content: flex-end;
-
   position: absolute;
   width: 100%;
+
+  @media (max-width: 700px) {
+    display: none;
+  }
 }
 
 .infos-banner {
@@ -289,6 +292,10 @@
         font-size: 44px;
       }
 
+      // @media(max-width: 500px) {
+      //   font-size: 28px;
+      // }
+
       span {
         color: #1e524f;
         font-weight: 700;
@@ -307,7 +314,7 @@
         margin: 0;
 
         @media (max-width: 1406px) {
-          font-size: 24px;
+          font-size: 26px;
         }
       }
     }
@@ -583,7 +590,7 @@
   // width: 911px;
   width: 1151px;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1199px) {
     width: 100%;
   }
 
@@ -1674,7 +1681,7 @@ footer {
   &::before {
     content: "";
     position: absolute;
-    height: 700px;
+    height: 593px;
     width: 131px;
     right: 0;
     z-index: 2;
@@ -1710,4 +1717,6 @@ footer {
   @media (max-width: 1199px) {
     display: flex;
   }
+
+  
 }
