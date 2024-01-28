@@ -570,7 +570,9 @@
   padding-top: 638px;
   margin-top: -469px;
   // margin-top: -258px;
-  background-image: url("../../images/bg-2.png");
+  // background-image: url("../../images/Pilares/pilares-texture-bg.png");
+  // background-color: #194341;
+  // background-blend-mode: lighten;
 }
 
 .container-estrutura {
@@ -578,7 +580,8 @@
 }
 
 .texts-estrutura {
-  width: 911px;
+  // width: 911px;
+  width: 1151px;
 
   @media (max-width: 992px) {
     width: 100%;
@@ -627,15 +630,16 @@
   color: white;
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 40px;
+  grid-gap: 24px;
   justify-content: flex-start;
 
   .card {
     // width: 455px;
     // height: 321px;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: #266663;
     padding: 48px 32px;
+    width: 100%;
 
     .card-title {
       display: flex;
@@ -970,6 +974,12 @@
   background-color: #ccbfa3;
   padding: 56px 0px;
   height: 100%;
+  overflow: hidden;
+  // background-image: url("../../images/Footer/footer-texture-bg.png");
+  // background: linear-gradient(rgba(211, 186, 132, 0.5), rgba(194, 163, 97, 0.5)),
+  //             url("../../images/Footer/footer-texture-bg.png");
+  background-position: center;
+  background-blend-mode: #ccbfa3;
   // margin-top: 112px;
 
   // @media (max-width: 1240px) {
