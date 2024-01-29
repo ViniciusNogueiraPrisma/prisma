@@ -28,6 +28,10 @@
       line-height: 27px;
       // transition: 0.4s !important;
 
+      @media (max-width: 450px) {
+        padding-right: 50px !important;
+      }
+
       &::after {
         content: "\e906";
         font-family: var(--font-icomoon);
