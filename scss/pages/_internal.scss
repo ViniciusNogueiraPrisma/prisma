@@ -418,6 +418,10 @@
     width: 329px;
     height: auto;
 
+    @media (max-width: 512px) {
+      width: 100%;
+    }
+
     .swiper-card {
       border: 2px solid #2e7a77;
       border-radius: 4px;
@@ -490,6 +494,10 @@
   flex-direction: column;
   gap: 24px;
 
+  @media (max-width: 1200px) {
+    display: none !important;
+  }
+
   .swiper-button-next,
   .swiper-button-prev {
     top: -132px !important;
@@ -511,6 +519,10 @@
     font-weight: 400;
     line-height: 50.4px;
     word-wrap: break-word;
+
+    @media(max-width: 900px) {
+      font-size: 31px;
+    }
   }
 
   p {
@@ -539,13 +551,30 @@
   margin-top: -165px;
   padding-top: 250px;
   padding-bottom: 64px;
+
+  @media (max-width: 1199px) {
+    margin-top: -103px;
+    padding-top: 210px;
+  }
+
+  @media (max-width: 727px) {
+    margin-top: -60px;
+    padding-top: 130px;
+  }
+
+  @media (max-width: 510px) {
+    margin-top: -32px;
+  }
 }
 
 .accordions-sec {
   display: flex;
   gap: 24px;
   position: relative;
-  // height: 100vh;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
 
   .title-accordion {
     padding: 40px;
@@ -555,6 +584,12 @@
     position: sticky;
     top: 164px;
 
+    @media (max-width: 1200px) {
+      position: relative;
+      top: unset;
+      height: 100%;
+    }
+
     h3 {
       margin: 0;
       padding: 0;
@@ -563,6 +598,10 @@
       font-family: "Sofia Sans", sans-serif;
       font-weight: 400;
       line-height: 42px;
+
+      @media (max-width: 900px) {
+        font-size: 27px;
+      }
     }
   }
 
@@ -587,6 +626,10 @@
     font-weight: 400;
     line-height: 120%;
     color: #1e524f;
+
+    @media (max-width: 900px) {
+      font-size: 31px;
+    }
   }
 
   .first-p {
