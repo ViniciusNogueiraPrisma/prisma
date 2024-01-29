@@ -1833,3 +1833,29 @@
     // border: 1px solid red;
   }
 }
+
+.drop-idiomas {
+  .dropdown-menu {
+    min-width: fit-content !important;
+    height: fit-content !important;
+    min-height: fit-content !important;
+
+    padding: 0;
+    margin: 0;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0;
+
+        a {
+          width: fit-content !important;
+          font-family: "Sofia Sans";
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
