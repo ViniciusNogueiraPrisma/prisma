@@ -1028,6 +1028,10 @@
   justify-content: space-between;
   gap: 171px;
 
+  @media (max-width: 1199px) {
+    flex-direction: column;
+  }
+
   .contents {
     // width: 1005px;
     display: flex;
@@ -1216,11 +1220,16 @@
   .list {
     height: fit-content;
     position: sticky;
-    top: 223px;
+    // top: 223px;
+    top: 20vh;
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 1198px;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
 
     a {
       transition: 0.5s;
