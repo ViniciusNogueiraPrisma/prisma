@@ -1288,6 +1288,10 @@
   .title-sis {
     padding-top: 64px;
 
+    @media (max-width: 900px) {
+      margin-bottom: 32px;
+    }
+
     h2 {
       margin: 0;
       padding: 0;
