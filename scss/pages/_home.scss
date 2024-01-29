@@ -1767,3 +1767,158 @@ footer {
     display: flex;
   }
 }
+
+.texts-contato {
+  padding-top: 64px;
+
+  .texts-content {
+    h2 {
+      color: var(--Font-Titles-title-large, #1e524f);
+
+      /* Titles/Desktop/H2 */
+      font-family: "Sofia Sans";
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 120%; /* 50.4px */
+      margin: 0;
+      padding: 0;
+
+      padding-bottom: 24px;
+
+      @media (max-width: 748px) {
+        font-size: 31px;
+      }
+    }
+
+    p {
+      color: var(--Font-Text-text-big, #1d1d1d);
+
+      font-family: Arial;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.cards-contato {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 24px;
+  padding-bottom: 80px;
+
+  @media (max-width: 1199px) {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+  }
+
+  @media (max-width: 748px) {
+    grid-template-columns: auto;
+  }
+
+  .card {
+    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    h5 {
+      padding: 0;
+      margin: 0;
+
+      color: var(--Font-Titles-title-small, #333);
+
+      font-family: "Sofia Sans";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 120%;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+
+      color: var(--Font-Text-text-small, #666);
+      font-family: Arial;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+}
+
+.localizacao {
+  padding-bottom: 64px;
+}
+
+.title-local {
+  h3 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 24px;
+
+    color: var(--Font-Titles-title-medium, #1d1d1d);
+
+    font-family: "Sofia Sans";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+
+    @media (max-width: 748px) {
+      font-size: 31px;
+    }
+  }
+
+  span {
+    margin: 0;
+    padding: 0;
+
+    color: var(--Font-Text-text-big, #1d1d1d);
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+    color: var(--Font-Text-text-big, #1d1d1d);
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.form-contact-us {
+  margin-top: 24px;
+  padding-bottom: 64px;
+
+  .div-input {
+    input {
+      padding: 12px 16px !important;
+      border-radius: 12px !important;
+    }
+
+    textarea {
+      border-radius: 12px !important;
+    }
+  }
+}
