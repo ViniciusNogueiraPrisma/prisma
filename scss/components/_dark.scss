@@ -501,4 +501,154 @@
   .proj-nt {
     background-color: transparent;
   }
+
+  .texts-section-des .texts-content h3 {
+    color: white;
+  }
+
+  .texts-section-des .texts-content h3 span {
+    color: white;
+  }
+
+  .images-section-des::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background: rgb(27, 27, 27);
+    background: linear-gradient(
+      0deg,
+      rgba(27, 27, 27, 0.96) 0%,
+      rgba(0, 0, 0, 0.96) 100%
+    );
+  }
+
+  .parallax-container {
+    background-color: transparent;
+  }
+
+  .xp-prisma {
+    background-color: transparent;
+  }
+
+  .counter-xp .counter-item span {
+    color: black;
+  }
+
+  .carrosel-xp {
+    background-color: transparent;
+  }
+
+  .title-carousel-xp p {
+    color: white;
+  }
+
+  .mySwiper-xp .swiper-slide p {
+    color: white;
+  }
+
+  .mySwiper-xp .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+
+  .texts-sec h2 {
+    color: white;
+  }
+
+  .texts-sec p {
+    color: white;
+  }
+
+  .dados-sec {
+    background-color: transparent;
+  }
+
+  .mySwiper-sec .swiper-slide .swiper-card {
+    border: 1px solid white;
+  }
+
+  .sec-accordions-container {
+    background-color: transparent;
+  }
+
+  .accordion .accordion-header button:not(.collapsed) {
+    background-color: transparent;
+    // border: 1px solid white;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+  }
+
+  .accordion .accordion-collapse .accordion-body {
+    background-color: transparent;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .services {
+    background-color: transparent;
+  }
+
+  .services .title-services h2 span {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .title-content h2 {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .title-content h4 {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .texts-content p {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .links-content .link-ri {
+    background-color: white;
+    color: black;
+  }
+
+  .itens-services .contents .content-1 .links-content .link-port {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .itens-services .list a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+
+    img {
+      filter: grayscale(2) brightness(93);
+    }
+  }
+
+  .itens-services .list a.active {
+    background-color: white !important;
+    color: black;
+
+    img {
+      filter: contrast(0);
+    }
+  }
+
+  .itens-services .contents .content-1 .other-text h4 {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .other-text p {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .other-text .list-p span {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .other-text h6 {
+    color: white;
+  }
 }
