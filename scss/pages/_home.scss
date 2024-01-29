@@ -1706,6 +1706,7 @@ footer {
   position: absolute;
   margin-left: -115px;
   margin-top: -400px;
+  z-index: 10;
 
   @media (max-width: 1096px) {
     display: none;
