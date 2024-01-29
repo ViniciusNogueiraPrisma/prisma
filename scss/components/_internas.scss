@@ -988,6 +988,10 @@
 
       padding-bottom: 24px;
 
+      @media (max-width: 1200px) {
+        font-size: 31px;
+      }
+
       span {
         margin: 0;
         padding: 0;
@@ -998,6 +1002,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: 120%;
+
+        @media (max-width: 1200px) {
+          font-size: 31px;
+        }
       }
     }
 
@@ -1052,6 +1060,10 @@
           font-style: normal;
           font-weight: 400;
           line-height: 120%;
+
+          @media (max-width: 1199px) {
+            font-size: 31px;
+          }
         }
         h4 {
           margin: 0;
@@ -1074,6 +1086,10 @@
           font-style: normal;
           font-weight: 400;
           line-height: 150%;
+
+          @media (max-width: 1199px) {
+            font-size: 16px;
+          }
         }
       }
 
@@ -1082,6 +1098,11 @@
         margin-top: 24px;
         gap: 24px;
         align-items: center;
+
+        @media(max-width: 688px) {
+          flex-direction: column;
+          align-items: start;
+        }
 
         .link-ri {
           border-radius: 50px;
@@ -1114,6 +1135,14 @@
         grid-template-columns: auto auto auto;
         gap: 14px;
         margin-top: 40px;
+
+        @media (max-width: 824px) {
+          grid-template-columns: auto auto;
+        }
+
+        @media (max-width: 594px) {
+          grid-template-columns: auto;
+        }
 
         .bullets {
           background-color: whitesmoke;
