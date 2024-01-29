@@ -1299,8 +1299,9 @@
       line-height: 50.4px;
       word-wrap: break-word;
 
-      @media(max-width: 900px) {
+      @media (max-width: 900px) {
         font-size: 31px;
+        line-height: 120%;
       }
     }
   }
