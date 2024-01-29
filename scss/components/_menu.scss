@@ -26,7 +26,9 @@ body {
   // padding-right: 32px;
   // padding-top: 24px;
   // padding-bottom: 24px;
-  padding: 24px;
+  // padding: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   width: 100%;
 
@@ -47,6 +49,7 @@ body {
       align-items: center;
 
       .logo-mobile {
+        width: 140px;
         margin-right: 8px;
       }
 
@@ -120,6 +123,7 @@ body {
       font-size: rem(12);
       color: var(--pure-black);
       margin-top: 8px;
+      font-family: "Sofia Sans";
     }
   }
 
@@ -243,16 +247,40 @@ body {
       }
 
       .accordion-button {
-        padding: 0px;
+        padding: 24px;
         position: relative;
-        // color: var(--text-white);
         color: #666666;
         border-radius: 0;
         background: transparent;
         gap: 10px;
         font-size: rem(20);
-        // font-weight: 600;
-        align-items: center;
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        background-color: #1e524f;
+        // border-top-left-radius: 8px;
+        // border-top-right-radius: 8px;
+        border-radius: 8px;
+
+        color: var(--Font-Text-text-negative, #fff);
+
+        /* Menu/Mobile/Canal/Default */
+        font-family: "Sofia Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 124%; /* 24.8px */
+
+        p {
+          color: var(--Secondary-brand-40, #d9cdb5);
+
+          /* Body/Paragraph/Body 2 */
+          font-family: Arial;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 132%; /* 18.48px */
+        }
 
         &::after {
           content: none;
@@ -279,11 +307,15 @@ body {
         }
 
         &:not(.collapsed) {
-          background: none;
-          border-bottom: none;
-          box-shadow: none;
-          border-bottom: 1px solid #058441;
-          color: #058441;
+          // background: none;
+          // border-bottom: none;
+          // box-shadow: none;
+          // border-bottom: 1px solid #058441;
+          // color: #058441;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
         }
       }
 
@@ -294,7 +326,7 @@ body {
           padding-left: 24px;
           padding-bottom: 8px;
           padding-top: 16px;
-          margin: 16px 0;
+          // margin: 16px 0;
           background-color: #dddddd;
 
           li {
@@ -309,6 +341,15 @@ body {
               text-decoration: none;
               //   color: var(--text-white);
               color: gray;
+
+              color: var(--Menu-Pgina-Text-text-default, #194341);
+
+              /* Menu/Desktop/Canal/Default */
+              font-family: "Sofia Sans";
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: 124%; /* 22.32px */
             }
 
             /*
@@ -423,3 +464,35 @@ body {
 //   z-index: -1;
 //   left: 8px;
 // }
+
+.title-redes-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  span {
+    color: var(--Secondary-brand-default, #998f7a);
+    font-family: "Sofia Sans" !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 21.6px */
+  }
+
+  a {
+    background: #194341;
+    padding: 16px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+
+    color: var(--Button-Primary-Text-text-default, #fff);
+    text-align: center;
+
+    /* Button/Large */
+    font-family: "Sofia Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 18px */
+  }
+}
