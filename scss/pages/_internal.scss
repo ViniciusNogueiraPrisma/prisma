@@ -520,7 +520,7 @@
     line-height: 50.4px;
     word-wrap: break-word;
 
-    @media(max-width: 900px) {
+    @media (max-width: 900px) {
       font-size: 31px;
     }
   }
@@ -542,6 +542,12 @@
     position: relative;
     z-index: 2;
     border-radius: 8px;
+
+    @media (max-width: 900px) {
+      height: 107px;
+      object-fit: cover;
+      width: 100%;
+    }
   }
 }
 
