@@ -576,6 +576,9 @@
 .estrutura-home {
   padding-top: 638px;
   margin-top: -469px;
+  position: relative;
+  // position: relative;
+  // z-index: 10;
   // margin-top: -258px;
   // background-image: url("../../images/Pilares/pilares-texture-bg.png");
   // background-color: #194341;
@@ -698,8 +701,13 @@
   }
 }
 
+.clientes-home-sec {
+  background-color: #f2f2f2;
+}
+
 .video-home {
   margin-top: -120px;
+  background-color: #f2f2f2;
 
   @media (max-width: 1199px) {
     .container {
@@ -723,6 +731,7 @@
 
 .video {
   border-radius: 8px;
+  position: relative;
 
   @media (max-width: 1200px) {
     border-radius: 0px;
@@ -756,6 +765,11 @@
 
   .texts-video {
     padding-bottom: 80px;
+    width: 858px;
+
+    @media (max-width: 1050px) {
+      width: 100%;
+    }
 
     @media (max-width: 775px) {
       padding-bottom: 168px;
@@ -917,27 +931,24 @@
 
 .logos-cliente {
   display: grid;
+  z-index: 1;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.9248074229691877) 71%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.9248074229691877) 21%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0.9248074229691877) 41%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1);
-
   padding-bottom: 112px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgb(242, 242, 242);
+    background: linear-gradient(
+      0deg,
+      rgba(242, 242, 242, 1) 28%,
+      rgba(242, 242, 242, 0.5494572829131652) 100%
+    );
+  }
 
   @media (max-width: 772px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1594,7 +1605,7 @@ footer {
         line-height: 150%;
         padding-bottom: 32px;
 
-        //tentando limitar 3 linhas aqui 
+        //tentando limitar 3 linhas aqui
 
         // height: 173px;
         // margin: 0;
