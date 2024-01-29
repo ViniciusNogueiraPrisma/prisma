@@ -1099,7 +1099,7 @@
         gap: 24px;
         align-items: center;
 
-        @media(max-width: 688px) {
+        @media (max-width: 688px) {
           flex-direction: column;
           align-items: start;
         }
@@ -1344,11 +1344,19 @@
     gap: 40px;
     border-bottom: 1px solid #999999 !important;
 
+    // @media (max-width: 1187px) {
+    //   border-bottom: unset !important;
+    // }
+
     li {
       a.active {
         transition: 0.5s;
         color: #194341 !important;
         border-bottom: 2px solid #194341;
+
+        @media (max-width: 389px) {
+          border-bottom: unset;
+        }
       }
 
       a {
@@ -1361,6 +1369,10 @@
         line-height: 27.6px;
         word-wrap: break-word;
         text-decoration: none;
+
+        @media (max-width: 900px) {
+          font-size: 21px;
+        }
       }
     }
   }
@@ -1383,6 +1395,10 @@
           font-weight: 400;
           line-height: 42px;
           word-wrap: break-word;
+
+          @media (max-width: 1187px) {
+            font-size: 31px;
+          }
         }
 
         p {
@@ -1395,6 +1411,10 @@
           font-weight: 400;
           line-height: 31.2px;
           word-wrap: break-word;
+
+          @media (max-width: 1187px) {
+            font-size: 21px;
+          }
         }
       }
 
@@ -1402,6 +1422,11 @@
         display: flex;
         justify-content: space-between;
         gap: 24px;
+
+        @media (max-width: 1187px) {
+          flex-direction: column;
+          gap: 55px;
+        }
 
         .content {
           display: flex;
@@ -1438,10 +1463,18 @@
             width: fit-content;
             margin-top: 40px;
 
+            @media (max-width: 1187px) {
+              width: 100%;
+            }
+
             img {
               box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
               border-radius: 8px;
               object-fit: cover;
+
+              @media (max-width: 1187px) {
+                width: 100%;
+              }
             }
           }
         }
@@ -1467,6 +1500,10 @@
       font-weight: 400;
       line-height: 42px;
       word-wrap: break-word;
+
+      @media (max-width: 1187px) {
+        font-size: 31px;
+      }
     }
 
     h4 {
@@ -1479,6 +1516,10 @@
       font-weight: 400;
       line-height: 31.2px;
       word-wrap: break-word;
+
+      @media (max-width: 1187px) {
+        font-size: 21px;
+      }
     }
   }
 
@@ -1486,6 +1527,10 @@
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
+    @media (max-width: 1187px) {
+      flex-direction: column;
+    }
 
     .content {
       margin-top: 60px;
@@ -1511,9 +1556,17 @@
         width: fit-content;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
+        @media (max-width: 1187px) {
+          width: 100%;
+        }
+
         img {
           object-fit: cover;
           border-radius: 8px;
+
+          @media (max-width: 1187px) {
+            width: 100%;
+          }
         }
       }
     }
@@ -1528,10 +1581,29 @@
   display: flex;
   gap: 24px;
 
+  @media (max-width: 1187px) {
+    flex-direction: column;
+  }
+
   .content {
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (max-width: 1187px) {
+      gap: 55px;
+    }
+
+    .content-img {
+      @media (max-width: 1187px) {
+        width: 100%;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
 
     .content-text {
       height: 100%;
@@ -1547,6 +1619,10 @@
         font-weight: 400;
         line-height: 42px;
         word-wrap: break-word;
+
+        @media (max-width: 1187px) {
+          font-size: 31px;
+        }
       }
 
       h4 {
@@ -1559,6 +1635,10 @@
         font-weight: 400;
         line-height: 31.2px;
         word-wrap: break-word;
+
+        @media (max-width: 1187px) {
+          font-size: 21px;
+        }
       }
     }
 
@@ -1594,6 +1674,18 @@
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     gap: 24px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: auto auto auto;
+    }
+
+    @media (max-width: 657px) {
+      grid-template-columns: auto auto;
+    }
+
+    @media (max-width: 479px) {
+      grid-template-columns: auto;
+    }
 
     .img {
       border: 1px solid #2e7a77;
