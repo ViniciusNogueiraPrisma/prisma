@@ -1298,6 +1298,10 @@
       font-weight: 400;
       line-height: 50.4px;
       word-wrap: break-word;
+
+      @media(max-width: 900px) {
+        font-size: 31px;
+      }
     }
   }
 
