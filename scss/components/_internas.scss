@@ -264,7 +264,8 @@
 
 .logo-white {
   object-fit: cover;
-  width: 180px;
+  // width: 180px;
+  width: 150px;
 }
 
 .carousel-indicators {
@@ -1354,6 +1355,10 @@
     gap: 40px;
     border-bottom: 1px solid #999999 !important;
 
+    @media (max-width: 598px) {
+      gap: 16px;
+    }
+
     // @media (max-width: 1187px) {
     //   border-bottom: unset !important;
     // }
@@ -1731,7 +1736,7 @@
     background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     border-radius: 8px;
   }
 

@@ -8,7 +8,8 @@
   // background-color: #FAFAFA;
   // background-color: var(--pure-white);
 
-  padding: 32px 0;
+  // padding: 32px 0;
+  padding: 24px 0px;
   transition: 0.3s;
 
   &.fixed {
@@ -473,7 +474,7 @@
 
       .logo-colorida {
         display: block;
-        width: 180px;
+        width: 150px;
       }
 
       .header-navigation-item {
@@ -707,7 +708,7 @@
   gap: 64px;
 
   @media (max-width: 1439px) {
-    gap: 36px;
+    gap: 40px;
   }
 
   @media (max-width: 466px) {

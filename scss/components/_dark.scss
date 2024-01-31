@@ -651,4 +651,71 @@
   .itens-services .contents .content-1 .other-text h6 {
     color: white;
   }
+
+  .video-home {
+    background-color: transparent;
+  }
+
+  .clientes-home-sec {
+    background-color: transparent;
+  }
+
+  .logos-cliente::before {
+    display: none;
+  }
+
+  .button:hover {
+    background-color: transparent !important;
+    color: white !important;
+    border: 1px solid white;
+  }
+
+  .tab-pane-sis .nav-tabs li a.active {
+    color: white !important;
+    border-bottom: 2px solid white !important;
+  }
+
+  .tab-pane-sis .tab-content .tab-pane .title-tab-content h3 {
+    color: white;
+  }
+
+  .tab-pane-sis .tab-content .tab-pane .title-tab-content p {
+    color: white;
+  }
+
+  .tab-pane-sis .tab-content .tab-pane .main-content .content .text p {
+    color: white;
+  }
+
+  .empresas-grupo .title-content-eg h2 {
+    color: white;
+  }
+
+  .empresas-grupo .content-eg .img {
+    border: 1px solid white;
+  }
+
+  .empresas-grupo .content-eg .img p {
+    color: white;
+  }
+
+  .monitoramento .title-monitoramento h2 {
+    color: white;
+  }
+
+  .monitoramento .title-monitoramento h4 {
+    color: white;
+  }
+
+  .monitoramento .content-monitoramento .content .text p {
+    color: white;
+  }
+
+  .content-tabs .content .content-text h3 {
+    color: white;
+  }
+
+  .content-tabs .content .content-text h4 {
+    color: white;
+  }
 }
