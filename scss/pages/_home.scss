@@ -541,7 +541,7 @@
       h4 {
         position: absolute;
         top: 0;
-        margin-top: 160px;
+        margin-top: 130px;
 
         color: white;
         font-size: 24px;
@@ -554,7 +554,7 @@
       p {
         position: absolute;
         top: 0;
-        margin-top: 240px;
+        margin-top: 210px;
 
         color: white;
         font-size: 18px;
@@ -563,6 +563,10 @@
         line-height: 27px;
         word-wrap: break-word;
         transition: 0.5s;
+
+        @media (max-width: 500px) {
+          margin-top: 244px;
+        }
       }
     }
   }
@@ -1716,7 +1720,7 @@ footer {
 .pagination-home-first {
   position: absolute;
   margin-left: -115px;
-  margin-top: -400px;
+  margin-top: -389px;
   z-index: 10;
 
   @media (max-width: 1096px) {
