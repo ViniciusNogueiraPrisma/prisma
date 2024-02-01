@@ -47,11 +47,11 @@
           gap: 42px;
         }
 
-        @media(max-width: 1439px) {
+        @media (max-width: 1439px) {
           gap: 32px;
         }
 
-        @media(max-width: 1439px) {
+        @media (max-width: 1439px) {
           gap: 24px;
         }
 
@@ -567,7 +567,7 @@
 
       .logo-colorida {
         display: block;
-        width: 200px !important;
+        width: 150px !important;
       }
 
       .nav-menu-header {
@@ -695,11 +695,11 @@
 
 @media (max-width: 570px) {
   .logo-white {
-    width: 165px !important;
+    width: 150px !important;
   }
 
   .logo-colorida {
-    width: 165px !important;
+    width: 150px !important;
   }
 }
 

@@ -314,7 +314,7 @@
         margin: 0;
 
         @media (max-width: 1406px) {
-          font-size: 26px;
+          font-size: 25px;
         }
       }
     }
@@ -1695,8 +1695,8 @@ footer {
       background: rgb(255, 255, 255);
       background: linear-gradient(
         90deg,
-        rgba(255, 255, 255, 0.73) 0%,
-        rgba(255, 255, 255, 0.73) 50%
+        rgba(255, 255, 255, 0.53) 0%,
+        rgba(255, 255, 255, 0.53) 50%
       );
     }
   }
@@ -1934,6 +1934,31 @@ footer {
 
     textarea {
       border-radius: 12px !important;
+    }
+  }
+}
+
+.swiper-home-first {
+  .swiper-pagination {
+    width: 100%;
+    display: none;
+
+    @media (max-width: 1096px) {
+      margin-top: 25px;
+      display: block !important;
+      bottom: unset !important;
+
+      .swiper-pagination-bullet {
+        transition: 0.4s;
+      }
+
+      .swiper-pagination-bullet-active {
+        width: 60px;
+        border-radius: 4px;
+        transition: 0.4s;
+        background-color: #d9cdb5;
+        opacity: 1 !important;
+      }
     }
   }
 }
