@@ -303,6 +303,6 @@ a {
 
 .btn-1 {
   &::after {
-    filter: invert(1) grayscale(1) brightness(6.5);
+    // filter: invert(1) grayscale(1) brightness(6.5);
   }
 }
