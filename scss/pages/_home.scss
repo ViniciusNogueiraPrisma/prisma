@@ -1,3 +1,7 @@
+body {
+  background-color: #fefefe;
+}
+
 .section-destaque-calendar-resultados {
   .row {
     > div {
@@ -519,10 +523,10 @@
     .btn-slide {
       width: fit-content;
       padding: 6px 16px;
-      background-color: #998f7a;
+      background-color: #e7eceb;
       border-radius: 100px;
 
-      color: white;
+      color: #0b453a;
       font-size: 18px;
       font-family: "Sofia Sans", sans-serif;
       font-weight: 700;
@@ -581,7 +585,10 @@
   padding-top: 638px;
   margin-top: -469px;
   position: relative;
-  background-image: url("../../images/pilares-texture-bg\ \(1\).png");
+  background-image: url("../../images/section-texture.png");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: center;
 }
 
@@ -1006,7 +1013,9 @@
   height: 100%;
   overflow: hidden;
   background-position: center;
-  background-blend-mode: #0b453a;
+  background-image: url("../../images/bg-textura.png");
+  background-blend-mode: overlay;
+  background-size: cover;
 
   @media (max-width: 1240px) {
     padding-top: 32px;
@@ -1157,6 +1166,17 @@ footer {
       gap: 12px;
       width: 120px;
 
+      a {
+        text-decoration: none !important;
+        color: white;
+        font-size: 16px;
+        font-family: Arial;
+        font-weight: 400;
+        line-height: 24px;
+        word-wrap: break-word;
+        text-decoration: none;
+      }
+
       p {
         color: white;
         font-size: 16px;
@@ -1164,6 +1184,7 @@ footer {
         font-weight: 400;
         line-height: 24px;
         word-wrap: break-word;
+        text-decoration: none;
 
         margin: 0;
         padding: 0;
@@ -1269,7 +1290,7 @@ footer {
     }
 
     button {
-      background-color: #d9cdb5;
+      background-color: #17876d;
       border-radius: 2px;
       padding: 12px;
       border: none;
@@ -1375,8 +1396,7 @@ footer {
   background-position: center;
   background-size: cover;
   background-position: center;
-  background-blend-mode: overlay;
-  // margin-top: 114px;
+  background-blend-mode: color-burn;
   margin-top: 94px;
 
   .title-internas {
@@ -1421,7 +1441,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
-    color: #1e524f;
+    color: #032b22;
 
     @media (max-width: 920px) {
       font-size: 31px;
@@ -1436,7 +1456,7 @@ footer {
     margin: 0;
     padding: 0;
 
-    color: #1d1d1d;
+    color: #032b22;
     font-family: Arial;
     font-size: 18px;
     font-style: normal;
@@ -1449,7 +1469,7 @@ footer {
     padding: 0;
     padding-top: 40px;
 
-    color: #1d1d1d;
+    color: #0b453a;
     font-family: "Sofia Sans", sans-serif;
     font-size: 35px;
     font-style: normal;
@@ -1463,12 +1483,12 @@ footer {
 }
 
 .first-content-qs {
-  background-color: #f2f2f2;
+  background-color: var(--bg-light);
 }
 
 .s-texts-qs {
   h2 {
-    color: #1e524f;
+    color: #032b22;
     font-family: "Sofia Sans", sans-serif;
 
     font-size: 42px;
@@ -1512,12 +1532,12 @@ footer {
 }
 
 .s-texts-qs-s {
-  color: #266663 !important;
+  color: #032b22 !important;
   font-weight: 700 !important;
 }
 
 .plataformas-prisma {
-  background-color: #f2f2f2;
+  background-color: #e7eceb;
 }
 
 .container-p {
@@ -1536,7 +1556,7 @@ footer {
     margin: 0;
     padding: 0;
 
-    color: #333;
+    color: #03624c;
     font-family: "Sofia Sans", sans-serif;
     font-size: 26px;
     font-style: normal;
@@ -1606,7 +1626,7 @@ footer {
 
         white-space: nowrap;
         overflow: hidden;
-        color: #666;
+        color: #0b453a;
         text-overflow: ellipsis;
         font-family: Arial;
         font-size: 16px;
@@ -1641,7 +1661,7 @@ footer {
         padding: 0;
         text-decoration: none;
 
-        color: #666;
+        color: #17876d;
         font-family: Arial;
         font-size: 16px;
         font-style: normal;
@@ -1951,7 +1971,7 @@ footer {
         width: 60px;
         border-radius: 4px;
         transition: 0.4s;
-        background-color: #d9cdb5;
+        background-color: var(--bg-new-button);
         opacity: 1 !important;
       }
     }
