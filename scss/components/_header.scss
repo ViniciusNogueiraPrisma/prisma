@@ -190,8 +190,6 @@
       button {
         background-color: transparent;
         border: none;
-        // margin-left: 64px;
-
         display: flex;
         align-items: center;
       }
@@ -204,10 +202,10 @@
         .icon-busca {
           &::before {
             font-size: 18px;
-            background-color: #194341;
+            background-color: var(--bg-new-button);
             border-radius: 50%;
             padding: 6px;
-            color: white !important;
+            color: black !important;
           }
         }
       }
@@ -720,14 +718,14 @@
 
     a {
       padding: 14px 28px;
-      background-color: #194341;
+      background-color: var(--bg-new-button) !important;
       border-radius: 50px;
       font-size: rem(18);
       line-height: 18px;
-      color: #fff;
+      color: black;
       font-family: "Sofia Sans", sans-serif;
       text-decoration: none;
-      font-weight: 200;
+      font-weight: 700;
 
       @media (max-width: 1439px) {
         font-size: 16px;
@@ -777,7 +775,7 @@
 }
 
 .estrutura-home {
-  background-color: #194341;
+  background-color: #0B453A;
 }
 
 @media (max-width: 1199px) {
