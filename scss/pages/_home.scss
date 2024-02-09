@@ -246,6 +246,10 @@ body {
   }
 }
 
+// * {
+//   border: 1px solid red;
+// }
+
 .infos-banner {
   z-index: 10;
   position: relative;
@@ -259,6 +263,7 @@ body {
   .texts-banner {
     width: 853px;
     margin-left: 7.65625vw;
+    overflow-x: hidden;
 
     @media (max-width: 1439px) {
       margin-left: 0px;
@@ -326,6 +331,7 @@ body {
     .btns-banner {
       display: flex;
       gap: 24px;
+      overflow: hidden;
 
       @media (max-width: 767px) {
         flex-direction: column;
@@ -460,6 +466,7 @@ body {
     justify-content: space-between;
     transition: 0.5s;
     min-width: 329px;
+    overflow: hidden;
 
     @media (max-width: 870px) {
       padding: 64px 28px;
@@ -1136,7 +1143,7 @@ footer {
   }
 
   .contents-list {
-    border-right: 1px solid #383838;
+    border-right: 1px solid rgb(32 32 32);
     padding: 0px 14px;
 
     &:first-child {
@@ -1390,7 +1397,7 @@ footer {
 }
 
 .header-internas {
-  background-color: #194341;
+  background-color: #0b453a;
   height: 200px;
   background-image: url("../../images/bg-textura.png");
   background-position: center;
@@ -1687,11 +1694,13 @@ footer {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    overflow: hidden !important;
 
     img {
       width: 100%;
       object-fit: cover;
       height: 100%;
+      overflow: hidden;
     }
 
     @media (max-width: 624px) {
@@ -1713,6 +1722,7 @@ footer {
         rgba(255, 255, 255, 0.53) 0%,
         rgba(255, 255, 255, 0.53) 50%
       );
+      z-index: 1;
     }
   }
 
@@ -1803,7 +1813,7 @@ footer {
 
   .texts-content {
     h2 {
-      color: var(--Font-Titles-title-large, #1e524f);
+      color: var(--Font-Titles-title-large, #032b22);
 
       /* Titles/Desktop/H2 */
       font-family: "Sofia Sans";
@@ -1822,7 +1832,7 @@ footer {
     }
 
     p {
-      color: var(--Font-Text-text-big, #1d1d1d);
+      color: var(--Font-Text-text-big, #021d17);
 
       font-family: Arial;
       font-size: 18px;
@@ -1879,7 +1889,7 @@ footer {
       padding: 0;
       margin: 0;
 
-      color: var(--Font-Text-text-small, #666);
+      color: var(--Font-Text-text-small, #00c270);
       font-family: Arial;
       font-size: 18px;
       font-style: normal;
@@ -1899,7 +1909,7 @@ footer {
     padding: 0;
     padding-bottom: 24px;
 
-    color: var(--Font-Titles-title-medium, #1d1d1d);
+    color: var(--Font-Titles-title-medium, #0b453a);
 
     font-family: "Sofia Sans";
     font-size: 35px;
@@ -1954,6 +1964,8 @@ footer {
 }
 
 .swiper-home-first {
+  overflow: hidden;
+
   .swiper-pagination {
     width: 100%;
     display: none;

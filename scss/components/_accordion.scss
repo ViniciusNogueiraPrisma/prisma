@@ -27,7 +27,7 @@
       }
 
       .accordion-body {
-        border: 2px solid red;
+        // border: 2px solid red;
       }
     }
 
@@ -98,12 +98,8 @@
     .accordion-body {
       padding: 0px 40px 24px 40px;
       border-radius: 0 0 9px 9px;
-      // background-color: #194341;
       transition: 0.3s;
-
-      background-color: var(--bg-light);
-
-      // color: white;
+      background-color: #aacbc4;
       font-size: 18px;
       font-family: Arial;
       font-weight: 400;
@@ -113,3 +109,9 @@
   }
 }
 
+.accordion {
+  button[aria-expanded="true"] {
+    // border: 1px solid red;
+    background-color: #aacbc4;
+  }
+}
