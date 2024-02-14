@@ -246,10 +246,6 @@ body {
   }
 }
 
-// * {
-//   border: 1px solid red;
-// }
-
 .infos-banner {
   z-index: 10;
   position: relative;
@@ -1986,6 +1982,103 @@ footer {
         background-color: var(--bg-new-button);
         opacity: 1 !important;
       }
+    }
+  }
+}
+
+///estilos modal
+
+.modal-header {
+  padding: 48px 90px;
+  display: flex;
+  flex-direction: column;
+  background: #032b22;
+  text-align: start;
+  align-items: start;
+
+  h5 {
+    margin: 0;
+    padding: 0;
+
+    margin-bottom: 16px;
+
+    color: white;
+    font-size: 35px;
+    font-family: Sofia Sans;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: start;
+    word-wrap: break-word;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    font-family: Sofia Sans;
+    font-weight: 700;
+    line-height: 21.6px;
+    word-wrap: break-word;
+  }
+}
+
+.modal-content {
+  padding: 0px !important;
+}
+
+.close {
+  right: 30px;
+  border: none;
+  background-color: none;
+  position: absolute;
+  border-radius: 4px;
+  background-color: #17876d;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+
+  bottom: 769px;
+  z-index: 1;
+
+  span {
+    color: white;
+    line-height: 18px;
+  }
+}
+
+.modal-body {
+  background: #eeeeee;
+  padding: 48px 90px !important;
+}
+
+.modal-btns {
+  max-width: 670px !important;
+
+  input {
+    // background-color: white;
+  }
+
+  label {
+    color: black;
+  }
+
+  .form-contact-us {
+    margin: 0;
+    padding: 0;
+
+    p {
+      color: #666666;
+      font-size: 14px;
+      font-family: Arial;
+      font-weight: 400;
+      line-height: 18.48px;
+      word-wrap: break-word;
+    }
+
+    a {
+      color: black;
+      font-weight: 700;
     }
   }
 }

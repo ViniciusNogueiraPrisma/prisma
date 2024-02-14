@@ -33,9 +33,9 @@
   }
 
   .primary-button {
-    background-color: #333333;
-    border: 1px solid #333333;
-    color: white;
+    background-color: white;
+    border: 1px solid white;
+    color: black;
   }
 
   .footer-fixed .top-footer-fixed .button-mapa-site {
@@ -219,8 +219,9 @@
   }
 
   .others-itens-menu .btn-espc a {
-    background-color: #fff;
-    color: black;
+    background-color: transparent !important;
+    border: 1px solid white;
+    color: white;
     font-weight: 700;
   }
 
@@ -344,6 +345,11 @@
     color: white;
   }
 
+  .cadastro-footer .input-footer button {
+    border: 1px solid white;
+    background-color: transparent;
+  }
+
   .clientes-home img {
     filter: grayscale(1) brightness(18);
   }
@@ -418,7 +424,7 @@
   }
 
   .first-dropdown .title-dropdown {
-    background-color: rgb(29, 29, 29);
+    background-color: #272727;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
   }
@@ -573,18 +579,12 @@
   }
 
   .accordion .accordion-header button:not(.collapsed) {
-    background-color: transparent;
-    // border: 1px solid white;
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    background-color: #f2f2f2;
   }
 
   .accordion .accordion-collapse .accordion-body {
-    background-color: transparent;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    background: #f2f2f2;
+    color: #333;
   }
 
   .services {
@@ -623,7 +623,7 @@
     color: white;
 
     img {
-      filter: grayscale(2) brightness(93);
+      filter: contrast(1) grayscale(1) brightness(26.5);
     }
   }
 
@@ -717,5 +717,92 @@
 
   .content-tabs .content .content-text h4 {
     color: white;
+  }
+
+  .cards-estrutura .card .card-title h6 {
+    color: white;
+  }
+
+  .cards-estrutura .card .card-texts h5 {
+    color: white;
+  }
+
+  .cards-estrutura .card .card-texts span {
+    color: white;
+  }
+
+  .card-title img {
+    filter: grayscale(1) brightness(11.5);
+  }
+
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-menu
+    li
+    .dropdown-item {
+    color: black;
+  }
+
+  .header
+    .content
+    .nav-menu-header
+    > ul
+    .header-navigation-item
+    .dropdown-menu
+    li
+    .dropdown-item:hover {
+    color: white;
+  }
+
+  .second-dropdown .item:hover a {
+    color: white !important;
+  }
+
+  .second-dropdown .item:hover img {
+    filter: grayscale(1) brightness(18);
+  }
+
+  .wrapper-sec .swiper-slide .swiper-card img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  .accordion .accordion-header button {
+    background-color: white;
+  }
+
+  .accordion .accordion-header button::after {
+    color: #333;
+  }
+
+  .accordion .accordion-header:hover button:hover {
+    background-color: #f2f2f2;
+  }
+
+  .accordions-sec .title-accordion h3 {
+    color: white;
+  }
+
+  .itens-services .contents .content-1 .bullets-content .bullets img {
+    filter: grayscale(1) brightness(0.5);
+  }
+
+  .section-sis {
+    background-color: transparent;
+  }
+
+  .section-sis-infos .title-sis-infos h4 {
+    color: white;
+  }
+
+  .secondary-button {
+    border: 1px solid white;
+    color: white;
+  }
+
+  a:hover {
+    color: black;
   }
 }
