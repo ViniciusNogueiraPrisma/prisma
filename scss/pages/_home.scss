@@ -1989,7 +1989,8 @@ footer {
 ///estilos modal
 
 .modal-header {
-  padding: 48px 90px;
+  // padding: 48px 90px;
+  padding: 5vh 9vh;
   display: flex;
   flex-direction: column;
   background: #032b22;
@@ -2034,11 +2035,13 @@ footer {
   position: absolute;
   border-radius: 4px;
   background-color: #17876d;
-  padding: 16px;
+  // padding: 16px;
+  padding: 1.693121693121693vh;
   display: flex;
   align-items: center;
 
-  bottom: 769px;
+  // bottom: 769px;
+  top: -30px;
   z-index: 1;
 
   span {
@@ -2049,7 +2052,8 @@ footer {
 
 .modal-body {
   background: #eeeeee;
-  padding: 48px 90px !important;
+  padding: 5vh 9vh !important;
+  border-radius: 8px !important;
 }
 
 .modal-btns {
