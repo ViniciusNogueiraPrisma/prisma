@@ -9,47 +9,9 @@ function debounce(callback, delay) {
   };
 }
 
-// função para atualizar o background do footer com base no data-theme
-// document.addEventListener("DOMContentLoaded", function () {
-//   const footerItem1 = document.querySelector(".footer-fixed");
-//   const footerItem2 = document.querySelector(".footer");
-//   const body = document.querySelector("body");
+//function parallax aqui
 
-//   function updateFooterBackground() {
-//     const dataTheme = body.getAttribute("data-theme");
-//     const url = window.location.pathname;
-
-//     if (url === "/" || url === "/default.aspx") {
-//       footerItem1.style.backgroundColor = "var(--pure-white)";
-//       footerItem2.style.backgroundColor = "var(--pure-white)";
-//     } else {
-//       footerItem1.style.backgroundColor = "#EEEEEE";
-//       footerItem2.style.backgroundColor = "#EEEEEE";
-//     }
-
-//     if (dataTheme === "dark") {
-//       footerItem1.style.backgroundColor = "initial";
-//       footerItem2.style.backgroundColor = "initial";
-//     }
-//   }
-
-//   function checkThemeAndURL() {
-//     updateFooterBackground();
-//   }
-//   checkThemeAndURL();
-
-//   const observer = new MutationObserver(function (mutations) {
-//     mutations.forEach(function (mutation) {
-//       if (mutation.attributeName === "data-theme") {
-//         checkThemeAndURL();
-//       }
-//     });
-//   });
-
-//   observer.observe(body, { attributes: true });
-
-//   updateFooterBackground();
-// });
+/////// fim parallax
 
 document.addEventListener("DOMContentLoaded", function () {
   let clicked = false;

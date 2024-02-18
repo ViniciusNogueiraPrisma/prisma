@@ -1997,6 +1997,10 @@ footer {
   text-align: start;
   align-items: start;
 
+  @media (max-width: 714px) {
+    padding: 32px 24px !important;
+  }
+
   h5 {
     margin: 0;
     padding: 0;
@@ -2054,6 +2058,10 @@ footer {
   background: #eeeeee;
   padding: 5vh 9vh !important;
   border-radius: 8px !important;
+
+  @media (max-width: 714px) {
+    padding: 32px 24px !important;
+  }
 }
 
 .modal-btns {
